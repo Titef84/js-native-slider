@@ -1,0 +1,45 @@
+@use "mixins" as *;
+@use "presets" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-main;
+  font-size: $font-size;
+}
+
+body {
+  margin: 0;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: $color-white;
+  &-left {
+    font-size: 1.75rem;
+    
+  &-right {
+        font-size: 1.5rem;
+      }
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  color: $color-white;
+
+  font-size: 40px;
+}
+
+.fa-pause-circle,
+.fa-play-circle {
+  color: $color-white;
+
+  font-size: 30px;
+}
