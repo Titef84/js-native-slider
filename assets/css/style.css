@@ -15,7 +15,7 @@ body {
 .title {
   position: absolute;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,16 +25,27 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: #ffffff;
+  text-shadow: 4px 4px #000000, 5px 5px #f4f4f4;
+  color: #ffffff;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .title-left {
-  display: block;
   font-size: 1.75rem;
-  left: calc(50% - 100px);
+  text-shadow: 4px 4px #000000, 5px 5px #f4f4f4;
+  color: #ffffff;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .title-right {
-  display: block;
   font-size: 1.5rem;
-  right: calc(50% - 100px);
+  text-shadow: -4px 4px #000000, -5px 5px #f4f4f4;
+  color: #ffffff;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .fa-angle-left,
@@ -93,7 +104,7 @@ body {
 
 .control-next, .control-prev, .control-pause {
   position: absolute;
-  z-index: 1;
+  z-index: 4;
   top: 0;
   bottom: 0;
   display: -webkit-box;
@@ -127,7 +138,6 @@ body {
   opacity: 1;
 }
 .control-prev {
-  z-index: 1;
   left: calc(50% - 15vh);
 }
 .control-prev:hover, .control-prev:focus {
@@ -144,7 +154,7 @@ body {
 
 .indicators {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,5 +189,23 @@ body {
 @media (min-width: 1200px) {
   .control-next, .control-prev, .control-pause {
     cursor: pointer;
+  }
+}
+@media (max-width: 767.8px) {
+  .title-left {
+    font-size: 1.25rem;
+    text-shadow: 4px 4px #000000, 5px 5px #f4f4f4;
+    color: #ffffff;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+  .title-right {
+    font-size: 1rem;
+    text-shadow: -3px 3px #000000, -4px 4px #f4f4f4;
+    color: #ffffff;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
   }
 }
