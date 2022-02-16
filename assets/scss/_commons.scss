@@ -58,11 +58,17 @@ body {
   color: $color-white;
 
   font-size: 40px;
+  &:hover {
+    color: $color-accent;
+  }
 }
 
-.fa-pause-circle,
 .fa-play-circle {
-  color: $color-white;
+  color: $color-accent;
+  font-size: 30px;
+}
 
+.fa-pause-circle {
+  color: $color-white;
   font-size: 30px;
 }

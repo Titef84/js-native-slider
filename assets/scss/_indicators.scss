@@ -27,8 +27,12 @@
   background: none;
   background-clip: padding-box;
 
-  &:hover {
+  &:hover,
+  &:focus {
     cursor: pointer;
+    transition: opacity 1s ease-in 0.5s;
+    opacity: 1;
+    text-shadow: 0 0 30px rgba($color-black, 0.8);
   }
 
   &.active {

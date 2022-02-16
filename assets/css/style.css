@@ -53,9 +53,17 @@ body {
   color: #ffffff;
   font-size: 40px;
 }
+.fa-angle-left:hover,
+.fa-angle-right:hover {
+  color: #df8a13;
+}
 
-.fa-pause-circle,
 .fa-play-circle {
+  color: #df8a13;
+  font-size: 30px;
+}
+
+.fa-pause-circle {
   color: #ffffff;
   font-size: 30px;
 }
@@ -122,13 +130,6 @@ body {
   transition: opacity 0.25s ease-out;
   opacity: 1;
 }
-.control-pause:hover, .control-pause:focus {
-  -webkit-transition: opacity 1s ease-in 0.5s;
-  -o-transition: opacity 1s ease-in 0.5s;
-  transition: opacity 1s ease-in 0.5s;
-  opacity: 1;
-  text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
-}
 .control-pause span {
   position: absolute;
   display: block;
@@ -179,8 +180,13 @@ body {
   background: none;
   background-clip: padding-box;
 }
-.indicator:hover {
+.indicator:hover, .indicator:focus {
   cursor: pointer;
+  -webkit-transition: opacity 1s ease-in 0.5s;
+  -o-transition: opacity 1s ease-in 0.5s;
+  transition: opacity 1s ease-in 0.5s;
+  opacity: 1;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
 }
 .indicator.active {
   border: 10px solid transparent;

@@ -42,7 +42,7 @@ class Carousel {
     this.pauseIcon = this.container.querySelector('#fa-pause-icon');
     this.playIcon = this.container.querySelector('#fa-play-icon');
 
-    this.isPlaying ? this.pauseIcon.style.opacity = 1 : this.playIcon.style.opacity = 1;
+    this.isPlaying ? this.playIcon.style.opacity = 0 : this.pauseIcon.style.opacity = 0;
   }
 
   _initIndicators() {
@@ -70,8 +70,6 @@ class Carousel {
     this.nextBtn.addEventListener('click', this.next.bind(this));
     this.prevBtn.addEventListener('click', this.prev.bind(this));
     this.indicatorsContainer.addEventListener('click', this._indicate.bind(this));
-    this.container.addEventListener('mouseenter', this._pause.bind(this));
-    this.container.addEventListener('mouseleave', this._play.bind(this));
   }
 
   _gotoNth(n) {

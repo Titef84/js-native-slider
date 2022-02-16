@@ -32,13 +32,6 @@
 
     @extend %control;
 
-    &:hover,
-    &:focus {
-      transition: opacity 1s ease-in 0.5s;
-      opacity: 1;
-      text-shadow: 0 0 30px rgba($color-white, 0.3);
-    }
-
     span {
       position: absolute;
       display: block;
